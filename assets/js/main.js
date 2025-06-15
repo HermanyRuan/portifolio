@@ -15,3 +15,21 @@ tabs.forEach(tab => {
         }
     });
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var mixer = mixitup('.work_container');
+});
+
+
+
+const linkWork = document.querySelectorAll('.work_item')
+
+function activeWork (){
+    linkWork.forEach(l=> l.classList.remove('active-work'))
+    this.classList.add('active-work')
+}
+
+linkWork.forEach(l=> l.addEventListener('click', activeWork))
